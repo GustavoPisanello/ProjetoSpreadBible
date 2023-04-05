@@ -1,6 +1,6 @@
 # ProjetoSpreadBible
 Autores: Alexandre Mezack de Lima & Gustavo Laur Pisanello
--------------------------------------------------------------------------------//--------------------------------------------------------------------------------------
+--------------------------------------------//--------------------------------------------
 Dados da API escolhida:
 
 -  URL da documentação: https://github.com/marciovsena/abibliadigital/blob/master/DOCUMENTATION.md
