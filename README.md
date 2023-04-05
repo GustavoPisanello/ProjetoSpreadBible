@@ -8,13 +8,13 @@ Dados da API escolhida:
 
 - Métodos disponíveis / (endpoints) / Foi utilizado ou não (0 = não foi usado, 1 = foi usado): 
       - Get Books (retorna a lista de 66 livros da bíblia) / GET https://www.abibliadigital.com.br/api/books - 1
-      - Get Book (retorna detalhes de um livro específico da bíblia) / GET https://www.abibliadigital.com.br/api/books/:abbrev 1
-      - Get Chapter (retorna todos o versos e detalhes de um capítulo) / GET https://www.abibliadigital.com.br/api/verses/:version/:abbrev/:chapter
-      - Get Verse (retorna um verso de um capítulo) / GET https://www.abibliadigital.com.br/api/verses/:version/:abbrev/:chapter/:number  
-      - Get Random Verse (retorna um verso aleatório de um capítulo aleatório) / GET https://www.abibliadigital.com.br/api/verses/:version/random
-      - Get Random Verse Book (retorna um verso aleatório de um livro específico) / GET https://www.abibliadigital.com.br/api/verses/:version/:abbrev/random 
-      - Search by word (retorna versos com a palavra digitada como parâmetro) / POST https://www.abibliadigital.com.br/api/verses/search
-      - Get Versions (retornatodas as versões da bíblia e o número de versos) / GET https://www.abibliadigital.com.br/api/versions
+      - Get Book (retorna detalhes de um livro específico da bíblia) / GET https://www.abibliadigital.com.br/api/books/:abbrev - 1
+      - Get Chapter (retorna todos o versos e detalhes de um capítulo) / GET https://www.abibliadigital.com.br/api/verses/:version/:abbrev/:chapter - 1
+      - Get Verse (retorna um verso de um capítulo) / GET https://www.abibliadigital.com.br/api/verses/:version/:abbrev/:chapter/:number - 1
+      - Get Random Verse (retorna um verso aleatório de um capítulo aleatório) / GET https://www.abibliadigital.com.br/api/verses/:version/random - 1
+      - Get Random Verse Book (retorna um verso aleatório de um livro específico) / GET https://www.abibliadigital.com.br/api/verses/:version/:abbrev/random - 1 
+      - Search by word (retorna versos com a palavra digitada como parâmetro) / POST https://www.abibliadigital.com.br/api/verses/search - 1
+      - Get Versions (retorna todas as versões da bíblia e o número de versos) / GET https://www.abibliadigital.com.br/api/versions - 1
       
 !!!!!!! Todos os métodos ACIMA não requisitam autenticação, mas, se não possuir uma, são limitadas a 20 requisições por hora !!!!!!!
 
@@ -30,10 +30,51 @@ Dados da API escolhida:
       - Get Requests (retorna as requisições num período) / GET https://www.abibliadigital.com.br/api/requests/:range (mês, semana, dia)
       - Get Number Requisitions (retorna o número de requisições num período / GET https://www.abibliadigital.com.br/api/requests/amount/:range (mês, semana, dia)
 
-- Sumário de Parâmetros desta API:
-      - abbrev: abreviação do livro {Gênesis = Gn / Êxodo = Ex / Levítico = Lv / Números = Nm / Deuteronômio = Dt / Josué = Js / Samuel = Sm / Ruth = Rt / Jó = job / 
+- Sumário de Parâmetros de busca desta API:
+      - abbrev: abreviação do livro {Gênesis = Gn / Êxodo = Ex / Levítico = Lv / Números = Nm / Deuteronômio = Dt / Josué = Js / Samuel = Sm / Ruth = Rt / Jó = job / Salmos = sl /  
       - chapter: capítulo da bíblia
       - search: variável digitada pelo usuário como índice de busca
       - verses: verso da bíblia
       - version: versão da bíblia
+      - number: número do versículo
       
+Exemplo de retorno de busca: https://www.abibliadigital.com.br/api/verses/nvi/sl/23
+
+book: {
+abbrev: "sl",
+name: "Salmos",
+author: "David, Moisés, Salomão",
+group: "Poéticos",
+version: "nvi"
+},
+chapter: {
+number: 23,
+verses: 6
+},
+verses: [
+{
+number: 1,
+text: "O Senhor é o meu pastor; de nada terei falta."
+},
+{
+number: 2,
+text: "Em verdes pastagens me faz repousar e me conduz a águas tranqüilas;"
+},
+{
+number: 3,
+text: "restaura-me o vigor. Guia-me nas veredas da justiça por amor do seu nome."
+},
+{
+number: 4,
+text: "Mesmo quando eu andar por um vale de trevas e morte, não temerei perigo algum, pois tu estás comigo; a tua vara e o teu cajado me protegem."
+},
+{
+number: 5,
+text: "Preparas um banquete para mim à vista dos meus inimigos. Tu me honras, ungindo a minha cabeça com óleo e fazendo transbordar o meu cálice."
+},
+{
+number: 6,
+text: "Sei que a bondade e a fidelidade me acompanharão todos os dias da minha vida, e voltarei à casa do Senhor enquanto eu viver."
+}
+]
+}
