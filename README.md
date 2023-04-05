@@ -3,8 +3,10 @@ Autores: Alexandre Mezack de Lima & Gustavo Laur Pisanello
 --------------------------------------------//--------------------------------------------
 Dados da API escolhida:
 
+![hol](https://user-images.githubusercontent.com/99992149/230115916-9f3e7ad6-e2f1-47cd-84b8-25514d7d6a2a.png)
+
 -  URL da documentação: https://github.com/marciovsena/abibliadigital/blob/master/DOCUMENTATION.md
--  URL de Acesso a API
+-  URL de Acesso a API: https://www.abibliadigital.com.br/api/
 
 - Métodos disponíveis / (endpoints) / Foi utilizado ou não (0 = não foi usado, 1 = foi usado): 
       - Get Books (retorna a lista de 66 livros da bíblia) / GET https://www.abibliadigital.com.br/api/books - 1
@@ -18,7 +20,7 @@ Dados da API escolhida:
       
 !!!!!!! Todos os métodos ACIMA não requisitam autenticação, mas, se não possuir uma, são limitadas a 20 requisições por hora !!!!!!!
 
-      - Create Users (cria um novo usuário) / POST https://www.abibliadigital.com.br/api/users (Dados para a criação de usuário: Nome, Email e Senha) - NÃO Precisa de autenticação
+      - Create Users (cria um novo usuário) / POST https://www.abibliadigital.com.br/api/users (Dados para a criação de usuário: Nome, Email e Senha) - NÃO Precisa de autenticação 
       - Get User (retorna um usuário) / GET https://www.abibliadigital.com.br/api/users/:email - Precisa de autenticação
       - Get User Stats (retorna as estatísticas do usuário) / GET https://www.abibliadigital.com.br/api/users/stats - Precisa de autenticação
       - Update Token (retorna um token) / PUT https://www.abibliadigital.com.br/api/users/token - NÃO Precisa de autenticação
