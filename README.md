@@ -3,7 +3,7 @@ Autores: Alexandre Mezack de Lima & Gustavo Laur Pisanello
 --------------------------------------------//--------------------------------------------
 Dados da API escolhida:
 
-<img center src = "https://user-images.githubusercontent.com/99992149/230115916-9f3e7ad6-e2f1-47cd-84b8-25514d7d6a2a.png" width="100px" heigth="100px"/>
+<img align="left" src = "https://user-images.githubusercontent.com/99992149/230115916-9f3e7ad6-e2f1-47cd-84b8-25514d7d6a2a.png" width="100px" heigth="100px"/>
 
 -  URL da documentação: https://github.com/marciovsena/abibliadigital/blob/master/DOCUMENTATION.md
 -  URL de Acesso a API: https://www.abibliadigital.com.br/api/
