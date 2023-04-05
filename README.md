@@ -23,20 +23,20 @@ Dados da API escolhida:
       
 !!!!!!! Todos os métodos ACIMA não requisitam autenticação, mas, se não possuir uma, são limitadas a 20 requisições por hora !!!!!!!
 
-      - Create Users (cria um novo usuário) / POST https://www.abibliadigital.com.br/api/users (Dados para a criação de usuário: Nome, Email e Senha) - NÃO Precisa de autenticação 
-      - Get User (retorna um usuário) / GET https://www.abibliadigital.com.br/api/users/:email - Precisa de autenticação
-      - Get User Stats (retorna as estatísticas do usuário) / GET https://www.abibliadigital.com.br/api/users/stats - Precisa de autenticação
-      - Update Token (retorna um token) / PUT https://www.abibliadigital.com.br/api/users/token - NÃO Precisa de autenticação
-      - Delete User (remove um usuário) / DELETE https://www.abibliadigital.com.br/api/users - Precisa de autenticação
-      - Resend User Password (Manda um email com a senha do usuário) / POST https://www.abibliadigital.com.br/api/users/password/:email - NÃO Precisa de autenticação
+      - Create Users (cria um novo usuário) / POST https://www.abibliadigital.com.br/api/users (Dados para a criação de usuário: Nome, Email e Senha) - NÃO Precisa de autenticação - 0
+      - Get User (retorna um usuário) / GET https://www.abibliadigital.com.br/api/users/:email - Precisa de autenticação - 0
+      - Get User Stats (retorna as estatísticas do usuário) / GET https://www.abibliadigital.com.br/api/users/stats - Precisa de autenticação - 0
+      - Update Token (retorna um token) / PUT https://www.abibliadigital.com.br/api/users/token - NÃO Precisa de autenticação - 0
+      - Delete User (remove um usuário) / DELETE https://www.abibliadigital.com.br/api/users - Precisa de autenticação - 0
+      - Resend User Password (Manda um email com a senha do usuário) / POST https://www.abibliadigital.com.br/api/users/password/:email - NÃO Precisa de autenticação - 0
       
 !!!!!!! Todos os métodos ABAIXO necessitam obrigatoriamente uma autenticação !!!!!!!!
 
-      - Get Requests (retorna as requisições num período) / GET https://www.abibliadigital.com.br/api/requests/:range (mês, semana, dia)
-      - Get Number Requisitions (retorna o número de requisições num período / GET https://www.abibliadigital.com.br/api/requests/amount/:range (mês, semana, dia)
+      - Get Requests (retorna as requisições num período) / GET https://www.abibliadigital.com.br/api/requests/:range (mês, semana, dia) - 0
+      - Get Number Requisitions (retorna o número de requisições num período / GET https://www.abibliadigital.com.br/api/requests/amount/:range (mês, semana, dia) - 0
 
 - Sumário de Parâmetros de busca desta API:
-      - abbrev: abreviação do livro {Gênesis = Gn / Êxodo = Ex / Levítico = Lv / Números = Nm / Deuteronômio = Dt / Josué = Js / Samuel = Sm / Ruth = Rt / Jó = job / Salmos = sl /  
+      - abbrev: abreviação do livro {Gênesis = Gn / Êxodo = Ex / Levítico = Lv / Números = Nm / Deuteronômio = Dt / Josué = Js / Samuel = Sm / Ruth = Rt / Jó = job / Salmos = sl / Mateus = mt / Isaías = Is / Jeremias = Jr / Judas = Jd / 
       - chapter: capítulo da bíblia
       - search: variável digitada pelo usuário como índice de busca
       - verses: verso da bíblia
