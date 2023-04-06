@@ -33,7 +33,7 @@ chapters: 24,
 group: "Históricos",
 name: "Josué",
 testament: "VT"
-} ``
+} ```
 !!!!!!!!
       - Create Users (cria um novo usuário) / POST https://www.abibliadigital.com.br/api/users (Dados para a criação de usuário: Nome, Email e Senha) - NÃO Precisa de autenticação - 0
       - Get User (retorna um usuário) / GET https://www.abibliadigital.com.br/api/users/:email - Precisa de autenticação - 0
