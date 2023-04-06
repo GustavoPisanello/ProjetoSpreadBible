@@ -1,6 +1,6 @@
 # ProjetoSpreadBible
 Autores: Alexandre Mezack de Lima & Gustavo Laur Pisanello
---------------------------------------------//--------------------------------------------
+
 Dados da API escolhida:
 
 <p align="center">
@@ -22,6 +22,8 @@ Dados da API escolhida:
       - Get Versions (retorna todas as versões da bíblia e o número de versos) / GET https://www.abibliadigital.com.br/api/versions - 1
       
 !!!!!!! Todos os métodos ACIMA não requisitam autenticação, mas, se não possuir uma, são limitadas a 20 requisições por hora. Além disso, TODOS retornam strings e ints. ex: 
+
+``` json 
 abbrev: {
 pt: "js",
 en: "js"
@@ -31,7 +33,8 @@ chapters: 24,
 group: "Históricos",
 name: "Josué",
 testament: "VT"
-} !!!!!!!!
+} ``
+!!!!!!!!
       - Create Users (cria um novo usuário) / POST https://www.abibliadigital.com.br/api/users (Dados para a criação de usuário: Nome, Email e Senha) - NÃO Precisa de autenticação - 0
       - Get User (retorna um usuário) / GET https://www.abibliadigital.com.br/api/users/:email - Precisa de autenticação - 0
       - Get User Stats (retorna as estatísticas do usuário) / GET https://www.abibliadigital.com.br/api/users/stats - Precisa de autenticação - 0
