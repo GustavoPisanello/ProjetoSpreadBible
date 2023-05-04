@@ -58,6 +58,7 @@ testament: "VT"
       
 Exemplo de retorno de busca: https://www.abibliadigital.com.br/api/verses/nvi/sl/23
 
+~~~javascript
 book: {
 abbrev: "sl",
 name: "Salmos",
@@ -96,3 +97,4 @@ text: "Sei que a bondade e a fidelidade me acompanharão todos os dias da minha 
 }
 ]
 }
+~~~
