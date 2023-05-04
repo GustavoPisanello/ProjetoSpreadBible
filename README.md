@@ -13,18 +13,17 @@ Dados da API escolhida:
 
 - Métodos disponíveis / (endpoints) / Foi utilizado ou não (0 = não foi usado, 1 = foi usado): <br>
 ```Get Books (retorna a lista de 66 livros da bíblia) / GET https://www.abibliadigital.com.br/api/books - 1
->Get Book (retorna detalhes de um livro específico da bíblia) / GET https://www.abibliadigital.com.br/api/books/:abbrev - 1
->Get Chapter (retorna todos o versos e detalhes de um capítulo) / GET https://www.abibliadigital.com.br/api/verses/:version/:abbrev/:chapter - 1
->Get Verse (retorna um verso de um capítulo) / GET https://www.abibliadigital.com.br/api/verses/:version/:abbrev/:chapter/:number - 1
->Get Random Verse (retorna um verso aleatório de um capítulo aleatório) / GET https://www.abibliadigital.com.br/api/verses/:version/random - 1
->Get Random Verse Book (retorna um verso aleatório de um livro específico) / GET https://www.abibliadigital.com.br/api/verses/:version/:abbrev/random - 1 
->Search by word (retorna versos com a palavra digitada como parâmetro) / POST https://www.abibliadigital.com.br/api/verses/search - 1
->Get Versions (retorna todas as versões da bíblia e o número de versos) / GET https://www.abibliadigital.com.br/api/versions - 1 
+Get Book (retorna detalhes de um livro específico da bíblia) / GET https://www.abibliadigital.com.br/api/books/:abbrev - 1
+Get Chapter (retorna todos o versos e detalhes de um capítulo) / GET https://www.abibliadigital.com.br/api/verses/:version/:abbrev/:chapter - 1
+Get Verse (retorna um verso de um capítulo) / GET https://www.abibliadigital.com.br/api/verses/:version/:abbrev/:chapter/:number - 1
+Get Random Verse (retorna um verso aleatório de um capítulo aleatório) / GET https://www.abibliadigital.com.br/api/verses/:version/random - 1
+Get Random Verse Book (retorna um verso aleatório de um livro específico) / GET https://www.abibliadigital.com.br/api/verses/:version/:abbrev/random - 1 
+Search by word (retorna versos com a palavra digitada como parâmetro) / POST https://www.abibliadigital.com.br/api/verses/search - 1
+Get Versions (retorna todas as versões da bíblia e o número de versos) / GET https://www.abibliadigital.com.br/api/versions - 1 
 ```
       
-!!!!!!! Todos os métodos ACIMA não requisitam autenticação, mas, se não possuir uma, são limitadas a 20 requisições por hora. Além disso, TODOS retornam strings e ints. ex: 
-
-json 
+ Todos os métodos ACIMA não requisitam autenticação, mas, se não possuir uma, são limitadas a 20 requisições por hora. Além disso, TODOS retornam strings e ints. ex: 
+~~~json 
 abbrev: {
 pt: "js",
 en: "js"
@@ -35,7 +34,8 @@ group: "Históricos",
 name: "Josué",
 testament: "VT"
 } 
-!!!!!!!!
+~~~
+
       - Create Users (cria um novo usuário) / POST https://www.abibliadigital.com.br/api/users (Dados para a criação de usuário: Nome, Email e Senha) - NÃO Precisa de autenticação - 0
       - Get User (retorna um usuário) / GET https://www.abibliadigital.com.br/api/users/:email - Precisa de autenticação - 0
       - Get User Stats (retorna as estatísticas do usuário) / GET https://www.abibliadigital.com.br/api/users/stats - Precisa de autenticação - 0
