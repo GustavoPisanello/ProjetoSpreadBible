@@ -12,10 +12,10 @@ Dados da API escolhida:
 -  URL de Acesso a API: https://www.abibliadigital.com.br/api/
 
 - Métodos disponíveis / (endpoints) / Foi utilizado ou não (0 = não foi usado, 1 = foi usado): <br>
-```Get Books (retorna a lista de 66 livros da bíblia) / GET https://www.abibliadigital.com.br/api/books - 1
-Get Book (retorna detalhes de um livro específico da bíblia) / GET https://www.abibliadigital.com.br/api/books/:abbrev - 1
-Get Chapter (retorna todos o versos e detalhes de um capítulo) / GET https://www.abibliadigital.com.br/api/verses/:version/:abbrev/:chapter - 1
-Get Verse (retorna um verso de um capítulo) / GET https://www.abibliadigital.com.br/api/verses/:version/:abbrev/:chapter/:number - 1
+```Get Books (retorna a lista de 66 livros da bíblia) / GET https://www.abibliadigital.com.br/api/books - 1 ```
+```Get Book (retorna detalhes de um livro específico da bíblia) / GET https://www.abibliadigital.com.br/api/books/:abbrev - 1```
+```Get Chapter (retorna todos o versos e detalhes de um capítulo) / GET https://www.abibliadigital.com.br/api/verses/:version/:abbrev/:chapter - 1```
+```Get Verse (retorna um verso de um capítulo) / GET https://www.abibliadigital.com.br/api/verses/:version/:abbrev/:chapter/:number - 1```
 Get Random Verse (retorna um verso aleatório de um capítulo aleatório) / GET https://www.abibliadigital.com.br/api/verses/:version/random - 1
 Get Random Verse Book (retorna um verso aleatório de um livro específico) / GET https://www.abibliadigital.com.br/api/verses/:version/:abbrev/random - 1 
 Search by word (retorna versos com a palavra digitada como parâmetro) / POST https://www.abibliadigital.com.br/api/verses/search - 1
@@ -43,13 +43,13 @@ testament: "VT"
       - Delete User (remove um usuário) / DELETE https://www.abibliadigital.com.br/api/users - Precisa de autenticação - 0
       - Resend User Password (Manda um email com a senha do usuário) / POST https://www.abibliadigital.com.br/api/users/password/:email - NÃO Precisa de autenticação - 0
       
-!!!!!!! Todos os métodos ABAIXO necessitam obrigatoriamente uma autenticação !!!!!!!!
+Todos os métodos ABAIXO necessitam obrigatoriamente uma autenticação 
 
       - Get Requests (retorna as requisições num período) / GET https://www.abibliadigital.com.br/api/requests/:range (mês, semana, dia) - 0
       - Get Number Requisitions (retorna o número de requisições num período / GET https://www.abibliadigital.com.br/api/requests/amount/:range (mês, semana, dia) - 0
 
-```Sumário de Parâmetros de busca desta API:
-      - abbrev: abreviação do livro {Gênesis = Gn / Êxodo = Ex / Levítico = Lv / Números = Nm / Deuteronômio = Dt / Josué = Js / Samuel = Sm / Ruth = Rt / Jó = job / Salmos = sl / Mateus = mt / Isaías = Is / Jeremias = Jr / Judas = Jd, etc }
+Sumário de Parâmetros de busca desta API:
+```      - abbrev: abreviação do livro {Gênesis = Gn / Êxodo = Ex / Levítico = Lv / Números = Nm / Deuteronômio = Dt / Josué = Js / Samuel = Sm / Ruth = Rt / Jó = job / Salmos = sl / Mateus = mt / Isaías = Is / Jeremias = Jr / Judas = Jd, etc }
       - chapter: capítulo da bíblia
       - search: variável digitada pelo usuário como índice de busca
       - verses: verso da bíblia
