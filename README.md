@@ -23,7 +23,7 @@ Get Versions (retorna todas as versões da bíblia e o número de versos) / GET 
 ```
       
  Todos os métodos ACIMA não requisitam autenticação, mas, se não possuir uma, são limitadas a 20 requisições por hora. Além disso, TODOS retornam strings e ints. ex: 
-~~~json 
+~~~javascript
 abbrev: {
 pt: "js",
 en: "js"
