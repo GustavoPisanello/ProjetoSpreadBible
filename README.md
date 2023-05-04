@@ -48,14 +48,14 @@ testament: "VT"
       - Get Requests (retorna as requisições num período) / GET https://www.abibliadigital.com.br/api/requests/:range (mês, semana, dia) - 0
       - Get Number Requisitions (retorna o número de requisições num período / GET https://www.abibliadigital.com.br/api/requests/amount/:range (mês, semana, dia) - 0
 
-- Sumário de Parâmetros de busca desta API:
+```Sumário de Parâmetros de busca desta API:
       - abbrev: abreviação do livro {Gênesis = Gn / Êxodo = Ex / Levítico = Lv / Números = Nm / Deuteronômio = Dt / Josué = Js / Samuel = Sm / Ruth = Rt / Jó = job / Salmos = sl / Mateus = mt / Isaías = Is / Jeremias = Jr / Judas = Jd, etc }
       - chapter: capítulo da bíblia
       - search: variável digitada pelo usuário como índice de busca
       - verses: verso da bíblia
       - version: versão da bíblia
       - number: número do versículo
-      
+```      
 Exemplo de retorno de busca: https://www.abibliadigital.com.br/api/verses/nvi/sl/23
 
 ~~~javascript
