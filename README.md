@@ -11,7 +11,7 @@ Dados da API escolhida:
 -  URL da documentação: https://github.com/marciovsena/abibliadigital/blob/master/DOCUMENTATION.md
 -  URL de Acesso a API: https://www.abibliadigital.com.br/api/
 
-- Métodos disponíveis / (endpoints) / Foi utilizado ou não (0 = não foi usado, 1 = foi usado): 
+- Métodos disponíveis / (endpoints) / Foi utilizado ou não (0 = não foi usado, 1 = foi usado): <br>
 `Get Books (retorna a lista de 66 livros da bíblia) / GET https://www.abibliadigital.com.br/api/books - 1`
 >Get Book (retorna detalhes de um livro específico da bíblia) / GET https://www.abibliadigital.com.br/api/books/:abbrev - 1
 >Get Chapter (retorna todos o versos e detalhes de um capítulo) / GET https://www.abibliadigital.com.br/api/verses/:version/:abbrev/:chapter - 1
